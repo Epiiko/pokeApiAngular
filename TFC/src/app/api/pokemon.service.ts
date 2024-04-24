@@ -12,4 +12,5 @@ export class PokemonService{
     getPokemon(name:string | undefined):Observable<any>{
         return this._http.get<any>("https://pokeapi.co/api/v2/pokemon/" + name)
     }
+    
 }
